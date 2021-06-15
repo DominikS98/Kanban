@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-weight: 700;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-flow: column;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+  height: 50vh;
+  width: 60vh;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 6px 4px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  transform: translateY(-400%);
+  animation: h1right 1s forwards;
+}
+.box h2 {
+  color: royalblue;
+  margin-bottom: 10px;
+}
+form {
+  opacity: 0;
+  animation: h3opasiti 2s forwards;
+}
+input {
+  border: 2px solid royalblue;
+  color: royalblue;
+}
+input:focus {
+  color: white;
+  background-color: royalblue;
+}
+input:hover {
+  color: white;
+  background-color: royalblue;
+}
+
+input[type="submit"] {
+  border: 0.4px solid black;
+  width: 30%;
+  margin: 10px;
+  color: royalblue;
+  background-color: white;
+}
+input[type="submit"]:hover {
+  border: 0.4px solid black;
+  margin: 10px;
+  color: white;
+  background-color: royalblue;
+}
+input[type="submit"]:focus {
+  border: 0.4px solid black;
+  width: 20%;
+  margin: 10px;
+  color: white;
+  background-color: royalblue;
+}
+p {
+  color: royalblue;
+}
+.niewidzocz{
+  display: none;
+}
+.widnoczny{
+  display: block;
+}
+.wybor{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  top: -10%;
+}
+button {
+  margin: 0.2rem;
+  font: inherit;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 40%;
+  background: none;
+}
+button:hover,
+button:focus{
+  color: royalblue;
+  border-color: royalblue;
+}
+@keyframes h1right {
+  to {
+    transform: translate(0px);
+  }
+}
+@keyframes h3opasiti {
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .box {
+    font-size: 18px;
+    width: 80vw;
+    height: 70vh;
+    min-width: 25vh;
+    min-height: 20vh;
+  }
+  .box h2 {
+    font-size: 24px;
+  }
+  input[type="submit"] {
+    width: 60%;
+    min-width: 20%;
+  }
+  input {
+    width: 60%;
+    min-width: 20%;
+  }
+}
+

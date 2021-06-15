@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.title {
+  color: rgb(42, 92, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  margin: 1rem auto;
+  width: 50%;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.container p {
+  position: relative;
+  color: rgb(40, 88, 233);
+}
+main{
+  display: flex;
+  flex-flow: column;
+}
+.box {
+  width: 20%;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.28);
+  margin: 0 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.28);
+  flex-flow: column;
+  align-items: center;
+  min-width: 22vh;
+  min-height: 10vh;
+  padding: 5px;
+}
+.container2 {
+  position: relative;
+  height: 45vh;
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+form {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  flex-flow: column;
+}
+.dodaj__zadanie {
+  position: relative;
+  left: 19%;
+  display: flex;
+  flex-flow: column;
+  height: 20vh;
+  width: 30vw;
+  color: royalblue;
+}
+.dodaj__zadanie h2 {
+  color: royalblue;
+  margin: 1rem 0;
+}
+.container2 p {
+  position: absolute;
+  top: 8%;
+  right: 25%;
+  color: royalblue;
+}
+#dodaj {
+  margin: 10px 0;
+  width: 20%;
+}
+input[type="submit"] {
+  border: 0.4px solid black;
+  width: 20%;
+  margin: 10px;
+  color: royalblue;
+  background-color: white;
+}
+input[type="submit"]:hover {
+  border: 0.4px solid black;
+  width: 20%;
+  margin: 10px;
+  color: white;
+  background-color: royalblue;
+}
+
+input[type="text"] {
+  color: royalblue;
+  margin: 0.2rem;
+}
+input[type="text"]:focus {
+  color: white;
+  background-color: royalblue;
+}
+input[type="text"]:hover {
+  color: white;
+  background-color: royalblue;
+}
+
+#difficulty{
+  color: royalblue;
+  outline-color: royalblue;
+}
+.easy {
+  background-color: green;
+  height: 12vh;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2px 1px;
+  cursor: grabbing;
+}
+.normal {
+  background-color: rgb(232, 255, 21);
+  height: 12vh;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2px 1px;
+  cursor: grabbing;
+}
+.hard {
+  background-color: orange;
+  height: 12vh;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2px 1px;
+  cursor: grabbing;
+}
+.veryDifficult {
+  background-color: red;
+  height: 12vh;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2px 1px;
+  cursor: grabbing;
+}
+.delete{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.delete img{
+  width: 20px;
+  height: 20px;  
+}
+.logout{
+  text-decoration: none;
+  color: royalblue;
+}
+.logout:focus{
+    color: rgb(2, 17, 63);
+}
+.logout:hover{
+    color: rgb(2, 17, 63);
+}
+@media (max-width: 750px) {
+  .title{
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.20);
+    height: 6vh;
+    padding: 0 20px;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+  .container {
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  }
+  .box{
+    margin: 1rem 0.5rem;
+    width: 45%;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+  flex-wrap:wrap;
+  padding: 5px;
+
+  }
+  .box{
+    margin: 05.rem 0.5rem;
+    width: 90%;
+  }
+  .container2{
+    width: 90%;
+  }
+  .dodaj__zadanie{
+    width: 70%;
+  }
+  .container2 p {
+    bottom: 1%;
+  }
+}
